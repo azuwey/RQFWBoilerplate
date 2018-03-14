@@ -1,0 +1,37 @@
+{
+  "name": "reactjsquartz",
+  "version": "0.0.1",
+  "description": "Skilltree",
+  "main": "public/index.js",
+  "repository": "",
+  "author": "Azuwey",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "nodemon -w ./private --exec 'webpack --config webpack.dev.js && yarn host'",
+    "prod": "webpack --config webpack.prod.js && yarn host",
+    "prehost": "tsc",
+    "host": "node public/index.js"
+  },
+  "dependencies": {
+    "compression": "^1.7.2",
+    "express": "^4.16.2",
+    "quartzfw": "^0.0.13",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "reflect-metadata": "^0.1.12",
+    "ws": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.11.1",
+    "@types/node": "^9.4.6",
+    "@types/react": "^16.0.39",
+    "@types/react-dom": "^16.0.4",
+    "@types/ws": "^4.0.1",
+    "nodemon": "^1.17.1",
+    "ts-loader": "^4.0.0",
+    "typescript": "^2.7.2",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.9"
+  }
+}
