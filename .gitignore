@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# lock files
+.lock
+
+# Public folder
+public
